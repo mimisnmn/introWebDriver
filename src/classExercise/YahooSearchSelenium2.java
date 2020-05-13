@@ -42,8 +42,8 @@ public class YahooSearchSelenium2 {
 	}
 
 	private static void buscarPalabraClave(String string) {
-		WebElement searchBox = driver.findElement(By.id("uh-search-box"));
-		WebElement searchButton = driver.findElement(By.id("uh-search-button"));
+		WebElement searchBox = driver.findElement(By.id("header-search-input"));
+		WebElement searchButton = driver.findElement(By.id("header-desktop-search-button"));
 		
 		searchBox.clear();
 		searchBox.sendKeys("Selenium");
